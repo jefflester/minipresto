@@ -80,7 +80,7 @@ services:
     command: server /data
 
 volumes:
-  postgres-hive-minio-data:
+  postgres-delta-lake-data:
     labels:
       - "com.starburst.tests=minitrino"
-      - "com.starburst.tests.module.hive-minio=catalog-hive-minio"
+      - "com.starburst.tests.module.delta-lake=catalog-delta-lake"
